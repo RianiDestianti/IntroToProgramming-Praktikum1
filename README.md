@@ -1,27 +1,33 @@
-Student Profile & Course Information System
+# Student Profile and Course Information Program
 
-A simple Python-based application designed to display student profile information and enrolled course details in a structured format using string manipulation and output formatting.
+A Python application designed to process and display structured student profile data along with course details using basic programming and computational logic concepts.
 
-This project was developed as part of the Independent Practical Work for the Introduction to Programming Course (IF-KK1003) at Universitas Teknologi Bandung.
+---
 
-Program Description
+## Program Features
 
-This program implements foundational Python programming concepts, such as variable declaration, data type modeling (string and integer), and text formatting using formatted string literals (f-strings).
+- **Structured Variable Declaration:** Uses appropriate data types (`str` and `int`) to represent student and academic information.
+- **Formatted Output:** Utilizes Python `f-strings` for clean and readable text alignment.
+- **Dynamic Separator Lines:** Uses string multiplication to generate clean horizontal border lines.
 
-Computational Logic & Concepts
+---
 
-Variable Declaration & Data Types
-Utilizes the str data type for textual information (such as student name, ID, and course name) and the int data type for numerical values (such as age, course credits, semester term, and entry year).
+## Computational Logic Reflection
 
-String Formatting (f-strings)
-Employs f-strings to inject variable values directly into output strings in a dynamic and clean manner, eliminating the need for manual string concatenation (+).
+1. **Variable Declaration**  
+   The program stores information using appropriate data types, such as strings (`str`) for names, ID numbers, and study programs, and integers (`int`) for entry year, age, and course credits. This ensures that academic records are structured and managed efficiently.
 
-String Manipulation Operator (*)
-Leverages the string multiplication operator (e.g., "=" * 45) to automatically generate consistent line dividers.
+2. **String Formatting (f-strings)**  
+   The program uses `f"..."` expressions within `print()` functions to dynamically inject variable values into formatted text lines. This approach keeps the code concise, readable, and more efficient than traditional string concatenation.
 
-Program Source Code
+3. **String Repetition Operator (`*`)**  
+   By using `"=" * 45` and `"-" * 45`, the program generates border lines programmatically. This demonstrates computational efficiency by eliminating manual character repetition.
 
-# Student Profile Data
+---
+
+## Python Source Code
+
+```python
 studentName     = "Riani Destianti"
 studentId       = "26552011036"
 studyProgram    = "Informatics Engineering"
@@ -29,14 +35,12 @@ universityName  = "Universitas Teknologi Bandung"
 entryYear       = 2026
 age             = 18
 
-# Course Information Data
 courseCode      = "IF-KK1003"
 courseName      = "Introduction to Programming"
 courseCredit    = 3
 semesterTerm    = 1
 classSchedule   = "Saturday, 20:25 WIB"
 
-# Output Formatting
 print("=" * 45)
 print("            STUDENT PROFILE")
 print("=" * 45)
@@ -55,39 +59,3 @@ print(f"Credits (SKS)  : {courseCredit}")
 print(f"Semester       : {semesterTerm}")
 print(f"Schedule       : {classSchedule}")
 print("=" * 45)
-
-
-Sample Output
-
-=============================================
-            STUDENT PROFILE
-=============================================
-Name           : Riani Destianti
-Student ID     : 26552011036
-Age            : 18 years old
-Study Program  : Informatics Engineering
-University     : Universitas Teknologi Bandung
-Entry Year     : 2026
----------------------------------------------
-           COURSE INFORMATION
----------------------------------------------
-Course Code    : IF-KK1003
-Course Name    : Introduction to Programming
-Credits (SKS)  : 3
-Semester       : 1
-Schedule       : Saturday, 20:25 WIB
-=============================================
-
-
-How to Run
-
-Clone this repository or copy the script.
-
-Execute the script via command line:
-
-python main.py
-
-
-Alternatively, open and execute the file in Google Colab or Jupyter Notebook.
-
-Created by Riani Destianti — Informatics Engineering, Universitas Teknologi Bandung
